@@ -6,14 +6,14 @@
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
-function remove(items , removeItems) {
- let array = []
- for (let name of items) {
- if (name !== removeItems) {
-array.push(name)
-}
-}
-return array
+function remove(items, removeItems) {
+    let array = []
+    for (let name of items) {
+        if (name !== removeItems) {
+            array.push(name)
+        }
+    }
+    return array
 }
 
 
@@ -22,15 +22,15 @@ return array
 // array but instead returns a new array.
 
 
-function remove(items , removeItems) {
+function remove(items, removeItems) {
     let array = []
     for (let name of items) {
-    if (name !== removeItems) {
-    array.push(name)
-    }
+        if (name !== removeItems) {
+            array.push(name)
+        }
     }
     return array
-    }
+}
 
 // note - function is same as problem 1, solved to return new array and tested in Mocha Tests - CJ
 
@@ -44,28 +44,28 @@ function remove(items , removeItems) {
 // returns the sum of those numbers.
 
 function sum(arrayNumbers) {
- let num = 0
- for (let check of arrayNumbers) {
- num += check
-}
-return num
+    let num = 0
+    for (let check of arrayNumbers) {
+        num += check
+    }
+    return num
 }
 
- 
+
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
-function average (arrayNumbers) {
+function average(arrayNumbers) {
     let avg = 0
     if (arrayNumbers.length === 0) {
         return undefined
-        }else{    
+    } else {
         for (let check of arrayNumbers) {
             avg += check
         }
         return avg /= arrayNumbers.length
-        }
+    }
 }
 
 
@@ -74,18 +74,14 @@ function average (arrayNumbers) {
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
-function minimum (array) {
-    let low = array [0]
-    if (array.length === 0) {
-    return undefined
-} else {
-    for (let check of array){
-        if (low>check) {
-            low=check
+function minimum(array) {
+    let low = array[0]
+        for (let check of array) {
+            if (low > check) {
+                low = check
+            }
         }
-    }
-    return low
-    }
+        return low
 }
 
 // note - I know we practiced this in class and want to make an array of number examples. Could use another demo.
@@ -120,10 +116,10 @@ function minimum (array) {
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
-function selectionSort (x) {
-    var arrayCopy = array.slice (0);
+// function selectionSort(x) {
+    // var arrayCopy = array.slice(0);
     //making a note here, want to go over in class. 
-}
+
 
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
@@ -131,6 +127,6 @@ function selectionSort (x) {
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
 
-function textList (x) [
+// function textList(x) [
     // I feel I could find out how to do this one when reviewing the demos we did in the PM zoom.
-]
+
